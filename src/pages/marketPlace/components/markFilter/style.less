@@ -1,0 +1,55 @@
+.markFilter {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 8px;
+  .filterButton {
+    color: #fcc33c;
+    border: 1px solid #fcc33c;
+  }
+  .filterIcon {
+    font-size: 24px;
+    color: #fcc33c;
+    margin-left: 12px;
+  }
+  .searchInput {
+    width: 200px;
+    margin-right: 12px;
+  }
+}
+.filterBox {
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  .tilterItem {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    .itemLabel {
+      width: 100px;
+      margin-right: 12px;
+      color: #383838;
+    }
+    .itemValue {
+      white-space: nowrap;
+      flex: 1;
+      color: rgba(56, 56, 56, 0.6);
+      .valueBox {
+        margin: 0 8px;
+        cursor: pointer;
+        padding: 4px 8px;
+      }
+      .active {
+        color: #ce9100;
+        background: rgba(252, 195, 60, 0.2);
+      }
+    }
+  }
+  .okBtnBox {
+    text-align: right;
+    .okBtn {
+      border: 1px solid #fcc33c;
+      background-color: #fcc33c;
+      color: black;
+    }
+  }
+}

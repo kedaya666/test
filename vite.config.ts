@@ -1,5 +1,6 @@
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import { config } from "dotenv";
+import * as path from "path";
 import { defineConfig } from "vite";
 import checker from "vite-plugin-checker";
 
@@ -18,6 +19,11 @@ export default defineConfig(({ command, mode }) => ({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
+    },
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
     },
   },
 }));
